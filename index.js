@@ -59,7 +59,7 @@ function tableCreate(x, y) {
             if (j % 2 === 1 && i % 2 === 1) {
                 td.classList.add('black');
                 arr.push(td);
-            }else if (j % 2 === 0 && i % 2 === 0) {
+            } else if (j % 2 === 0 && i % 2 === 0) {
                 td.classList.add('black');
                 arr.push(td);
             } else {
@@ -80,8 +80,6 @@ button.addEventListener('click', () => {
     table = tableCreate(x, y);
 });
 table.addEventListener('click', (event) => {
-    console.log(111111);
-    console.log(arr)
     let element = event.target;
     if (element.tagName != 'TD') {
         return;
